@@ -165,11 +165,23 @@ body{
     left:12px;
 }
 .arm{
-    width:30%;
-    height:60%;
+    width:20%;
+    height:30%;
     background:linear-gradient(90deg,var(--penguin-skin),rgb(209,210,199));
+    border-radius:30% 30% 30% 120%;
+    z-index:-1;
 }
-
+.arm.left{
+    top:60%;
+    left:20%;
+    transform-origin:top left;
+    transform:rotate(130deg) scaleX(-1);
+}
+.arm.right{
+    top:35%;
+    right:10%;
+    transform:rotate(-45deg);
+}
 .foot{
     width:10%;
     height:20%;
